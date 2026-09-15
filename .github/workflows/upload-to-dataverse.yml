@@ -14,3 +14,4 @@ jobs:
           DATAVERSE_TOKEN: ${{ secrets.DVUNIMI_TOKEN }}
           DATAVERSE_SERVER: https://dataverse.unimi.it
           DATAVERSE_DATASET_DOI: doi:10.13130/RD_UNIMI/OHXDSD
+          GITHUB_DIR: out, part2
