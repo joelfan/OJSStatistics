@@ -1,4 +1,4 @@
-name: upload_to_dvtest
+name: Upload to dvtest
 on:
   workflow_dispatch:
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Upload repository to Dataverse
+      - name: Upload repository to Dataverse Test
         uses: IQSS/dataverse-uploader@v1.7
         with:
           DATAVERSE_TOKEN: ${{ secrets.DVTEST }}
