@@ -1,5 +1,4 @@
-name: Upload to Dataverse
-
+name: upload_to_dvtest
 on:
   workflow_dispatch:
 
