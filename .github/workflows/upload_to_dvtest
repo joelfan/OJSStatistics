@@ -1,0 +1,16 @@
+name: Upload to Dataverse
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Upload repository to Dataverse
+        uses: IQSS/dataverse-uploader@v1.7
+        with:
+          DATAVERSE_TOKEN: ${{ secrets.DVTEST }}
+          DATAVERSE_SERVER: https://demo.dataverse.org
+          DATAVERSE_DATASET_DOI: doi:10.70122/FK2/DENHAX
